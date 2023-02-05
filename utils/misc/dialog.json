@@ -1,0 +1,34 @@
+{"SET_LINES": {"ORDER_LINE": "Оставить заявку",
+            "BUY_LINE": "Купить товар",
+            "BALANCE_LINE": "Мой баланс",
+            "TEST_LINE": "Тест менюхи"},
+
+"MAINMENU":
+{"menu": {"message_text": "Здравствуй, это главное меню! Выбери что хочешь сделать", "buttons": ["Оставить заявку", "Купить товар", "Мой баланс"]},
+"structure":["menu"],
+"previous":["MAINMENU", "menu"]
+},
+
+"ORDER_LINE":
+{"Order": {"message_text": "Какое направление вашего бизнеса?", "buttons":["Продажа", "Производство", "Оказание услуг"]},
+"Platform": {"message_text": "На какой платформе вы хотите разрабатывать чат-бота?", "buttons":["Телеграм", "Ватсап", "Вайбер"]},
+"Budget": {"message_text": "Какой у вас бюджет? От... До...", "buttons":[]},
+"Number": {"message_text": "Отправтьте свой номер", "buttons":[]},
+"Send": {"message_text": "Отправить заявку?", "buttons":["Отправить!"]},
+"structure": {
+  "1":"Order",
+  "2":"Platform",
+  "3":"Budget",
+  "4":"Number",
+  "5":"Send"
+},
+"previous":["MAINMENU", "menu"]
+},
+
+"BUY_LINE": {"Buy":
+{"message_text": "Выберите", "buttons":["Купить 1 раз", "Купить 2 раза", "Назад"]},
+"structure":
+["previous", "Buy"],
+"previous":
+["MAINMENU", "menu"]
+}}
